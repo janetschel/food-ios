@@ -11,6 +11,13 @@
 		F7DAC61C2C1C2988006937A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC61B2C1C2988006937A0 /* ContentView.swift */; };
 		F7DAC61E2C1C2989006937A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DAC61D2C1C2989006937A0 /* Assets.xcassets */; };
 		F7DAC6212C1C2989006937A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DAC6202C1C2989006937A0 /* Preview Assets.xcassets */; };
+		F7DAC62C2C1C3985006937A0 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC62B2C1C3985006937A0 /* FoodListView.swift */; };
+		F7DAC6302C1C3F48006937A0 /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC62F2C1C3F48006937A0 /* FoodAPI.swift */; };
+		F7DAC6332C1C460E006937A0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC6322C1C460E006937A0 /* WebService.swift */; };
+		F7DAC6352C1C462F006937A0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC6342C1C462F006937A0 /* NetworkError.swift */; };
+		F7DAC6382C1C4694006937A0 /* FoodCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC6372C1C4694006937A0 /* FoodCategoryModel.swift */; };
+		F7DAC63A2C1C51C5006937A0 /* ServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC6392C1C51C4006937A0 /* ServerResponseModel.swift */; };
+		F7DAC63D2C1C5770006937A0 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAC63C2C1C5770006937A0 /* ThumbnailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		F7DAC61B2C1C2988006937A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7DAC61D2C1C2989006937A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DAC6202C1C2989006937A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7DAC62B2C1C3985006937A0 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		F7DAC62F2C1C3F48006937A0 /* FoodAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAPI.swift; sourceTree = "<group>"; };
+		F7DAC6322C1C460E006937A0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F7DAC6342C1C462F006937A0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F7DAC6372C1C4694006937A0 /* FoodCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryModel.swift; sourceTree = "<group>"; };
+		F7DAC6392C1C51C4006937A0 /* ServerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseModel.swift; sourceTree = "<group>"; };
+		F7DAC63C2C1C5770006937A0 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 		F7DAC6182C1C2988006937A0 /* food */ = {
 			isa = PBXGroup;
 			children = (
+				F7DAC62D2C1C3F29006937A0 /* logic */,
+				F7DAC62A2C1C394C006937A0 /* views */,
 				F7DAC6192C1C2988006937A0 /* foodApp.swift */,
 				F7DAC61B2C1C2988006937A0 /* ContentView.swift */,
 				F7DAC61D2C1C2989006937A0 /* Assets.xcassets */,
@@ -65,6 +81,59 @@
 				F7DAC6202C1C2989006937A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7DAC62A2C1C394C006937A0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC63B2C1C5749006937A0 /* FoodList */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F7DAC62D2C1C3F29006937A0 /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC6312C1C4604006937A0 /* helper */,
+				F7DAC6362C1C468A006937A0 /* model */,
+				F7DAC62E2C1C3F33006937A0 /* api */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		F7DAC62E2C1C3F33006937A0 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC62F2C1C3F48006937A0 /* FoodAPI.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		F7DAC6312C1C4604006937A0 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC6322C1C460E006937A0 /* WebService.swift */,
+				F7DAC6342C1C462F006937A0 /* NetworkError.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		F7DAC6362C1C468A006937A0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC6372C1C4694006937A0 /* FoodCategoryModel.swift */,
+				F7DAC6392C1C51C4006937A0 /* ServerResponseModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F7DAC63B2C1C5749006937A0 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAC62B2C1C3985006937A0 /* FoodListView.swift */,
+				F7DAC63C2C1C5770006937A0 /* ThumbnailView.swift */,
+			);
+			name = FoodList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DAC62C2C1C3985006937A0 /* FoodListView.swift in Sources */,
 				F7DAC61C2C1C2988006937A0 /* ContentView.swift in Sources */,
+				F7DAC6302C1C3F48006937A0 /* FoodAPI.swift in Sources */,
+				F7DAC63D2C1C5770006937A0 /* ThumbnailView.swift in Sources */,
+				F7DAC63A2C1C51C5006937A0 /* ServerResponseModel.swift in Sources */,
+				F7DAC6352C1C462F006937A0 /* NetworkError.swift in Sources */,
+				F7DAC6382C1C4694006937A0 /* FoodCategoryModel.swift in Sources */,
+				F7DAC6332C1C460E006937A0 /* WebService.swift in Sources */,
 				F7DAC61A2C1C2988006937A0 /* foodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
